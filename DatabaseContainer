@@ -1,0 +1,11 @@
+
+docker run -d --name my-postgres \
+  -e POSTGRES_USER= \
+  -e POSTGRES_PASSWORD= \
+  -e POSTGRES_DB= \
+  -p 5432: \
+  postgres:#version
+
+
+#run in docker terminal, no dockerfile needed
+# log in and set up using command: docker exec -it my-postgres psql -U user -d mydb
